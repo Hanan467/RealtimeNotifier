@@ -8,6 +8,11 @@
             "Hanan\\RealtimeNotifier\\": "src/"
         }
     },
+    "autoload-dev": {
+    "psr-4": {
+        "Hanan\\RealtimeNotifier\\Tests\\": "tests/"
+    }
+    },
     "authors": [
         {
             "name": "hanan467",
@@ -23,6 +28,7 @@
 
     },
     "require-dev": {
-        "phpunit/phpunit": "^11.5"
+        "phpunit/phpunit": "^11.5",
+        "laravel/framework": "^11.43"
     }
 }
