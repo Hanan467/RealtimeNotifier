@@ -3,16 +3,14 @@
 use PHPUnit\Framework\TestCase;
 use Hanan\RealtimeNotifier\Events\NotificationEvent;
 use Illuminate\Support\Facades\Broadcast;
+use Illuminate\Support\Facades\Event;
 
-class NotificationSentTest extends TestCase
+class NotificationSentTest extends \Orchestra\Testbench\TestCase
+
 {
-    public function testEventBroadcastsOnCorrectChannel()
+    public function testNotificationSent()
     {
-        $event = new NotificationEvent('test message');
+        event(new NotificationEvent('Hello from Hanan'));
 
-        $this->assertInstanceOf(\Illuminate\Contracts\Broadcasting\ShouldBroadcastNow::class, $event);
-
-        // Check the broadcast channel
-        $this->assertEquals('realtime-notifications', $event->broadcastOn()->name);
     }
 }

@@ -24,9 +24,9 @@ class NotificationEvent implements ShouldBroadcastNow
 
     public function broadcastOn()
     {
-        return new Channel('realtime-notifications');
+        return new Channel('notifications');
     }
-    
+
     public function broadcastAs(): string
     {
         return 'NewNotification';
