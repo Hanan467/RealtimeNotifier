@@ -6,4 +6,3 @@
 
 - Broadcasts notifications in real-time using Laravel's event broadcasting system.
 - Supports Pusher as a default broadcasting driver.
-- Simple API to trigger notifications.
