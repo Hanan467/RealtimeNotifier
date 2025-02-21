@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Hanan\RealtimeNotifier\Events\NotificationEvent;
+use Hanan467\RealtimeNotifier\Events\NotificationEvent;
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Event;
 

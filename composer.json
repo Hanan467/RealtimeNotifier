@@ -1,21 +1,21 @@
 {
-    "name": "hanan/realtime-notifier",
+    "name": "hanan467/realtime-notifier",
     "description": "A simple package for real-time notifications using Pusher",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hanan\\RealtimeNotifier\\": "src/"
+            "Hanan467\\RealtimeNotifier\\": "src/"
         }
     },
     "autoload-dev": {
     "psr-4": {
-        "Hanan\\RealtimeNotifier\\Tests\\": "tests/"
+        "Hanan467\\RealtimeNotifier\\Tests\\": "tests/"
     }
     },
     "authors": [
         {
-            "name": "hanan467",
+            "name": "Hanan Ansar",
             "email": "hananansaresmael@gmail.com"
         }
     ],
@@ -31,5 +31,13 @@
         "phpunit/phpunit": "^11.5",
         "laravel/framework": "^11.43",
         "orchestra/testbench": "^9.10"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hanan467\\RealtimeNotifier\\Providers\\RealtimeNotifierServiceProvider"
+            ]
+        }
     }
 }

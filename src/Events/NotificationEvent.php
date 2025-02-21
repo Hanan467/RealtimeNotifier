@@ -1,6 +1,6 @@
 <?php
 
-namespace Hanan\RealtimeNotifier\Events;
+namespace Hanan467\RealtimeNotifier\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;

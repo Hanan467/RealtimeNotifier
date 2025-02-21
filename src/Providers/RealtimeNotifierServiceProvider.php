@@ -1,5 +1,5 @@
 <?php
-namespace Hanan\RealtimeNotifier\Providers;
+namespace Hanan467\RealtimeNotifier\Providers;
 
 use Illuminate\Broadcasting\BroadcastServiceProvider;
 use Illuminate\Support\ServiceProvider;
